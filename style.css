@@ -1,15 +1,16 @@
-h1 {
-    text-decoration: none;
-    color: gold;
-    
+.parent {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    width: 600px;
+    height: 500px;
+    gap: 20px;
 }
 
-.blank {
-    width: 150px;
-    height: 75px;
-    background-color: skyblue;
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
+.child {
+    background-color: black;
     
+    /* width: 200px; */
+    overflow-x: clip;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
